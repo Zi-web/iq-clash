@@ -66,14 +66,20 @@
               </ul>
             </li>
         </ul> 
-        
+        <!----
         <div class="search">
             <form>
               <input type="text" class="search__input" placeholder="Поиск">
               <button class="search__btn"></button>
             </form>
         </div>
-       
+       --->
+       <div id="search_block">
+  <form action="search_art.php" method="post" name="form_s" class="searchform">
+    <input class="searchfield" type="text" name="search" value="Поищем...?" onfocus="if (this.value == 'Поищем...?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Поищем...?';}" />
+    <input class="searchbutton" type="submit" name="submit_s" value="Да" />
+  </form>
+</div>
 
       </nav>
       
